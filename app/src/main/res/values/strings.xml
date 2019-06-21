@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SportAssistantApp</string>
+
+    <!-- Title Label -->
+    <string name="sport_info_item_title_01">Name</string>
+    <string name="sport_info_item_title_02">Date</string>
+    <string name="sport_info_item_title_03">Weight</string>
+    <string name="sport_info_item_title_04">Repetitions</string>
 </resources>
