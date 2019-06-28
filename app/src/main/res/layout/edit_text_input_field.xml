@@ -21,7 +21,8 @@
         android:id="@+id/sport_item_text_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/filler_text" />
+        android:text="@string/filler_text"
+        style="@style/standardText"/>
 
 
 </LinearLayout>

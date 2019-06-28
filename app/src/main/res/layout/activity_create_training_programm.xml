@@ -82,26 +82,60 @@
     <!-- UI ELEMENTS -->
 
     <TextView
+        style="@style/standardHeaderStyle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/create_training_program_title"
-        style="@style/standardHeaderStyle"
         android:background="@color/colorPrimary"
+        android:text="@string/create_training_program_title"
         app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_01"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:background="@drawable/new_training_programm_close_icon_white"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_guideline_01"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@id/vertical_guideline_01"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/horizontal_guideline_01"
-        android:background="@drawable/new_training_programm_close_icon_white"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_01">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/program_name_input"
+                layout="@layout/edit_text_input_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/day_recycler_view_list"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/program_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
 
+            </androidx.recyclerview.widget.RecyclerView>
 
 
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
