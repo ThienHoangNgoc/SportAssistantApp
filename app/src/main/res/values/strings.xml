@@ -13,4 +13,7 @@
     <!-- Header Title -->
     <string name="display_values_title">Input</string>
 
+    <!-- Button Text -->
+    <string name="mainButton">Submit and show</string>
+
 </resources>

@@ -1,14 +1,18 @@
 package com.example.sportassistantapp.activities;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.sportassistantapp.R;
+import com.example.sportassistantapp.Utils.AnimationUtils;
 import com.example.sportassistantapp.Utils.Utils;
 import com.example.sportassistantapp.dao.SportInfoItemDAO;
 import com.example.sportassistantapp.roomDB.SportInfoItemDatabase;
@@ -28,18 +32,25 @@ public class MainActivity extends AppCompatActivity {
     private EditText dateInput;
     private EditText weightInput;
     private EditText repetitionInput;
+    private Button showDialogBtn;
 
-    private SportInfoItemDatabase database = Room.databaseBuilder(this, SportInfoItemDatabase.class, "sportitemdb")
-            .allowMainThreadQueries()
-            .build();
+    private SportInfoItemDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        database = Room.databaseBuilder(this, SportInfoItemDatabase.class, "sportitemdb")
+                .allowMainThreadQueries()
+                .build();
         viewSetup();
         setLabelNames();
-        insertValuesIntoDb(Utils.EditTextToString(nameInput), Utils.EditTextToString(dateInput), Utils.EditTextToString(weightInput), Utils.EditTextToString(repetitionInput));
+        showDialogBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AnimationUtils.buttonClickAnimation(view);
+            }
+        });
     }
 
     private void viewSetup() {
@@ -55,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         dateInput = dateView.findViewById(R.id.sport_item_input);
         weightInput = weightView.findViewById(R.id.sport_item_input);
         repetitionInput = repetitionView.findViewById(R.id.sport_item_input);
+        showDialogBtn = findViewById(R.id.showDialogBtn);
     }
 
     private void setLabelNames() {
@@ -73,4 +85,7 @@ public class MainActivity extends AppCompatActivity {
         item.setRepetitions(repetition);
         itemDAO.insert(item);
     }
+
+
+
 }

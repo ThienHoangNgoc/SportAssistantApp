@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 import com.example.sportassistantapp.dao.SportInfoItemDAO;
 import com.example.sportassistantapp.roomDBModel.SportInfoItem;
 
-@Database(entities = {SportInfoItem.class}, version = 2)
+@Database(entities = {SportInfoItem.class}, version = 2, exportSchema = false)
 public abstract class SportInfoItemDatabase extends RoomDatabase {
     public abstract SportInfoItemDAO getItemDAO();
 
