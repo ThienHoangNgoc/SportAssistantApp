@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">SportAssistantApp</string>
+    <!-- Filler Text -->
+    <string name="filler_text">Filler text</string>
 
     <!-- Title Label -->
     <string name="sport_info_item_title_01">Name</string>
