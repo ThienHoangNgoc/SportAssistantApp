@@ -8,4 +8,9 @@
     <string name="sport_info_item_title_02">Date</string>
     <string name="sport_info_item_title_03">Weight</string>
     <string name="sport_info_item_title_04">Repetitions</string>
+
+
+    <!-- Header Title -->
+    <string name="display_values_title">Input</string>
+
 </resources>
