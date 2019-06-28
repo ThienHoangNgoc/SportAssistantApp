@@ -11,7 +11,7 @@
 
 
     <!-- Header Title -->
-    <string name="display_values_title">Input</string>
+    <string name="create_training_program_title">New Training Program</string>
 
     <!-- Button Text -->
     <string name="mainButton">Submit and show</string>

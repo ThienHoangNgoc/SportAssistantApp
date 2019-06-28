@@ -27,7 +27,7 @@
 
     <style name="standardHeaderStyle" parent="TextAppearance.AppCompat">
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
 
