@@ -13,6 +13,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:theme="@style/customNoActionBarTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

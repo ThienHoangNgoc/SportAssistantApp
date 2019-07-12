@@ -39,4 +39,5 @@
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">15dp</item>
     </style>
+
 </resources>

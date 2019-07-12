@@ -14,14 +14,6 @@ public class SportInfoItem {
     private String date;
     private String weight;
 
-    @NonNull
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(@NonNull Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
