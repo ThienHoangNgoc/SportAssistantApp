@@ -30,7 +30,4 @@ public interface SportInfoItemDAO {
 
     @Query("SELECT * FROM sportInfoItems WHERE name = :name")
     public SportInfoItem getItemByName(String name);
-
-    @Query("DELETE FROM sportInfoItems")
-    public void deleteAll();
 }
