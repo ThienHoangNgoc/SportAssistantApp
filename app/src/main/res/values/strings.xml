@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SportAssistantApp</string>
+    <!-- Filler Text -->
+    <string name="filler_text">Filler text</string>
+
+    <!-- Title Label -->
+    <string name="sport_info_item_title_01">Name</string>
+    <string name="sport_info_item_title_02">Date</string>
+    <string name="sport_info_item_title_03">Weight</string>
+    <string name="sport_info_item_title_04">Repetitions</string>
+
+
+    <!-- Header Title -->
+    <string name="display_values_title">Input</string>
+
+    <!-- Button Text -->
+    <string name="mainButton">Submit and show</string>
+
 </resources>
