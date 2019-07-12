@@ -111,6 +111,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:background="@android:color/black"
             android:layout_height="wrap_content">
 
             <include
@@ -122,7 +123,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/training_day_recycler_view_list"
+                android:id="@+id/workout_day_recycler_view_list"
                 android:layout_marginTop="20dp"
                 android:layout_below="@id/program_name_input"
                 android:layout_width="match_parent"
